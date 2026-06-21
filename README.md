@@ -14,9 +14,11 @@ L'Arduino Nano legge il segnale già presente sul pin OUT del sensore IR dell'am
  Il codice è stato scritto e testato su Arduino nano ma qualunque microcontrollore a 5V si può utilizzare direttamente senza traslatori di tensione.
  La funzionalità originale dell'amplificatore è stata mantenuta, è stata solo aggiunta la possibilità di comandarlo con i telecomandi delle tv samsung.
  I vari collegamenti sono stati effettuati sui segni rossi secondo le seguenti immagini:
-L'alimentazione e il segnale IR sono stati presi dal sensore IR a bordo (A801 a schematico) dove il pin 1 è GND, pin 2 il segnale IR e il pin 3 i 5V per alimentare l'arduino:
-<img width="834" height="796" alt="image" src="https://github.com/user-attachments/assets/7b3e8d91-f08d-40f5-a43e-a161180641c8" />
-<img width="1078" height="772" alt="image" src="https://github.com/user-attachments/assets/4ca3ae50-b9af-493a-9579-d6d5454febcf" />
+L'alimentazione e il segnale IR sono stati presi dal sensore IR a bordo (A801 a schematico) dove il pin 1 è GND, pin 2 il segnale IR e il pin lato display di R862 per i 5V che alimentano l'arduino (precedentemente erano stati presi dal sensore IR ma mi sono accorto dopo che ha una resistenza in serie da 47R che con la corrente richiesta dell'arduino faceva scendere troppo la tensione e a volte il tasto di power non funzionava):
+<img width="687" height="778" alt="image" src="https://github.com/user-attachments/assets/05b7aff0-b4ae-41fb-b7fe-f6a8d3880044" />
+
+<img width="1074" height="894" alt="image" src="https://github.com/user-attachments/assets/e5273cba-268d-4dd3-953d-445aba267b15" />
+
 
  
 per quanto riguarda il volume i pin A e B possono essere saldati sul retro dell'encoder o, come nel mio caso, ai capi di R910 e R911 per un KRF-v6080.
@@ -56,9 +58,10 @@ The Arduino Nano reads the signal already present on the OUT pin of the amplifie
 The code was written and tested on an Arduino Nano, but any 5V microcontroller can be used directly without voltage level shifters.
 The amplifier's original functionality has been preserved; the ability to control it with Samsung TV remotes has just been added.
 The various connections were made on the red marks according to the following images:
-The power supply and the IR signal were taken from the onboard IR sensor (A801 on the schematic) where pin 1 is GND, pin 2 is the IR signal, and pin 3 is the 5V to power the Arduino:
-<img width="834" height="796" alt="image" src="https://github.com/user-attachments/assets/7b3e8d91-f08d-40f5-a43e-a161180641c8" />
-<img width="1078" height="772" alt="image" src="https://github.com/user-attachments/assets/4ca3ae50-b9af-493a-9579-d6d5454febcf" />
+The power supply and the IR signal were taken from the onboard IR sensor (A801 on the schematic) where pin 1 is GND, pin 2 is the IR signal, and the display-side pin of R862 for the 5V to power the Arduino (previously they were taken from the IR sensor, but I realized later that it has a 47R series resistor which, with the current drawn by the Arduino, caused the voltage to drop too much and sometimes the power button didn't work):
+<img width="687" height="778" alt="image" src="https://github.com/user-attachments/assets/05b7aff0-b4ae-41fb-b7fe-f6a8d3880044" />
+
+<img width="1074" height="894" alt="image" src="https://github.com/user-attachments/assets/e5273cba-268d-4dd3-953d-445aba267b15" />
 
  
 As for the volume, pins A and B can be soldered to the back of the encoder or, as in my case, to the ends of R910 and R911 for a KRF-v6080.
