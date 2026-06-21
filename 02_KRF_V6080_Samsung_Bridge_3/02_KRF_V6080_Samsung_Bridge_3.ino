@@ -57,7 +57,7 @@ const uint16_t STEP_DELAY_US    = 2500;  // durata di ogni semifase del segnale 
                                           // -> aumenta se l'ampli non "sente" gli scatti,
                                           //    diminuisci se sale/scende troppo piano
 
-const uint16_t POWER_PULSE_MS   = 150;   // durata pressione simulata del tasto power
+const uint16_t POWER_PULSE_MS   = 300;   // durata pressione simulata del tasto power
                                           // (regola in base a quanto l'ampli richiede per
                                           //  riconoscere una pressione valida)
 
