@@ -75,4 +75,12 @@ For the sources, I used the encoder pins directly:
 <img width="1181" height="861" alt="image" src="https://github.com/user-attachments/assets/3d31e7f5-ab1b-4802-be52-9a128948bb7f" />
 
 
-The power command, instead, was taken here, on the button. In this case, you must not connect the Arduino pin directly with a wire as in the other two cases;
+The power command, instead, was taken here, on the button. In this case, you must not connect the Arduino pin directly with a wire as in the other two cases; a 1k resistor must be placed in series (critical value, 10k or other values won't work, it must be 1k because the amplifier's microcontroller reads it as an analog input along with the "BAND" button, which has another resistor).
+
+<img width="720" height="614" alt="image" src="https://github.com/user-attachments/assets/24dafa28-8838-4057-a0eb-fceec20f4825" />
+<img width="715" height="683" alt="image" src="https://github.com/user-attachments/assets/81533139-94e2-4aff-8bb5-51f398c85fc9" />
+
+And this is a picture of the "temporary" Arduino which will most likely stay there for life.
+<img width="1243" height="909" alt="image" src="https://github.com/user-attachments/assets/adab77e0-4ae4-4f1f-9ca6-7ec6246dfc2b" />
+
+Have fun!
